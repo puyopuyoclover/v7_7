@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Almeida Sports</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="imagens/Logo.png" alt="Logo da Loja" class="logo-img">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="saiba_mais.html">Saiba Mais</a></li>
+                <li><a href="contato.html" class="active">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   
+    <section class="contato">
+        <h2>Entre em Contato</h2>
+        
+        <p>Se você tiver alguma dúvida, sugestão ou precisar de assistência, por favor, preencha o formulário abaixo. Nossa equipe de atendimento ao cliente responderá o mais breve possível.</p>
+
+        <form action="processar_contato.php" method="POST">
+            <div class="campo">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            
+            <div class="campo">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="campo">
+                <label for="telefone">Número de Telefone</label>
+                <input type="tel" id="telefone" name="telefone" required>
+            </div>
+            
+            <div class="campo">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn">Enviar Mensagem</button>
+        </form>
+    </section>
+
+    
+    <footer>
+        <p>&copy; 2024 Almeida Sports. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

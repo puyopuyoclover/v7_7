@@ -1,0 +1,292 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;      
+}
+
+header .logo {
+    display: flex;
+    align-items: center; 
+}
+
+header .logo-img {
+    width: 120px;   
+    height: auto;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;        
+}
+
+header nav ul li {
+    margin-left: 20px;     
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ff9800; 
+}
+
+
+.banner {
+    background-color: #0066cc;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.banner h2 {
+    font-size: 2.5rem;
+}
+
+.banner p {
+    font-size: 1.5rem;
+}
+
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;         
+    justify-content: space-evenly;  
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.produto {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 250px;  
+    margin: 15px;   
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.produto:hover {
+    transform: translateY(-10px); 
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.produto h3 {
+    margin-top: 10px;
+    font-size: 1.6rem;
+}
+
+.produto p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.produto a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.produto a:hover {
+    background-color: #218838; 
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+
+@media (max-width: 768px) {
+    .produtos {
+        justify-content: space-between;  
+    }
+
+    .produto {
+        width: 100%;   
+        margin: 10px 0;
+    }
+}
+img {
+    max-width: 1000px;
+    width: 100%; 
+    height: auto;
+}
+/* Saiba Mais */
+.saiba-mais {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.saiba-mais h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.saiba-mais p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.saiba-mais h3 {
+    font-size: 1.5em;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.saiba-mais ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.saiba-mais ul li {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Contato */
+.contato {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.contato h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contato p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    font-size: 1.1em;
+    color: #444;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.campo input, .campo textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.campo input[type="text"], .campo input[type="email"], .campo input[type="tel"] {
+    height: 40px;
+}
+
+.campo textarea {
+    font-size: 1em;
+    resize: vertical;
+}
+
+button.btn {
+    padding: 12px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.btn:hover {
+    background-color: #218838;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+
