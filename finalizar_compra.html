@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -6,6 +5,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dados de Entrega</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #0e0f0f;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .logo-img {
+            max-width: 150px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .dados-entrega {
+            text-align: center;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 10px;
+            max-width: 600px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .dados-entrega h2 {
+            font-size: 2em;
+            color: #28a745;
+            margin-bottom: 20px;
+        }
+
+        .dados-entrega p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #202020;
+        }
+
+        .campo {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .campo label {
+            font-size: 1.1em;
+            color: #333;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .campo input {
+            width: 100%;
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .campo input:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+        .btn {
+            background-color: #28a745;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background-color: #176828;
+        }
+
+        footer {
+            background-color: #0e0f0f;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
 
@@ -15,21 +134,20 @@
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="#">Saiba mais</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="index.html"><i class="bi bi-house"></i> Início</a></li>
+                <li><a href="saiba_mais.html"><i class="bi bi-question-circle"></i> Saiba mais</a></li>
+                <li><a href="contato.html"><i class="bi bi-chat-dots"></i>Contato</a></li>
             </ul>
         </nav>
     </header>
 
     <section class="dados-entrega">
-        <h2>Informações de Entrega</h2>
-        <p>Preencha os campos abaixo para concluir sua compra.</p>
+        <h2>Precisamos dos seus dados para concluir a compra!</h2>
+        <p>Preencha os campos abaixo para que possamos enviar seu pedido com segurança e rapidez.</p>
         
-      
         <form action="agradecimento.html" method="post">
             <div class="campo">
-                <label for="nome">Nome:</label>
+                <label for="nome">Nome Completo:</label>
                 <input type="text" id="nome" name="nome" required>
             </div>
             <div class="campo">
@@ -37,13 +155,10 @@
                 <input type="tel" id="telefone" name="telefone" required>
             </div>
             <div class="campo">
-                <label for="endereco">Endereço:</label>
+                <label for="endereco">Endereço de Entrega:</label>
                 <input type="text" id="endereco" name="endereco" required>
             </div>
-            
-    
-
-            <button type="submit" class="btn">Confirmar Compra</button>
+            <button type="submit" class="btn"><i class="bi bi-bag-check-fill"></i>Confirmar Compra</button>
         </form>
     </section>
 
@@ -51,6 +166,5 @@
         <p>&copy; 2024 Almeida Sports. Todos os direitos reservados.</p>
     </footer>
 
-  
 </body>
 </html>
